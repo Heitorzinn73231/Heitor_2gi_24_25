@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <script>
+            function aminhaFunc(){
+                alert("Olá a todos!");
+            }
+        </script>
+    </head>
+    <body>
+    <script>
+        var i =0;
+        do{
+            i++;
+            document.write("O número é "+i);
+            document.write("<br />")
+        }
+        while(i<=5);
+    </script>
+    <script>
+        var asuaIdade="";
+        do{
+            asuaIdade=prompt("INTRODUZA A SUA IDADE!","AQUI POR FAVOR!")
+
+        }
+        while(isNaN(asuaIdade)==true);
+        document.write("Muito bem a sua idade é de " + asuaIdade + " anos!");
+    </script>
+
+    <h2>A minha primeira função em JavaScript!</h2>
+    
+    <button onclick="aminhaFunc()">Experimenta</button>
+
+    <p>Este exemplo chama a função que realiza uma operação e retorna o resultado:</p>
+
+    <p id="teste" >Aqui será apresentado o resultado!</p>
+
+    <script>
+        function multiplicaFunc(a,b){
+            return a * b;
+
+        }
+        document.getElementById("teste").innerHTML=multiplicaFunc(5,3);
+    </script>
+    <p>O valor devolvido pela função é:</p>
+    <p id="pe">multiplicar(1,2,3,4)</p>
+    <script>
+        function multiplicar(a,b,c,d){
+            return a * b * c * d;
+        }
+        document.getElementById("pe").innerHTML=multiplicar(1,2,3,4)
+    </script>
+    </body>
+</html>
