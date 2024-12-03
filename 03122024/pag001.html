@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>FORMAÇAO ACADEMICA:</legend>
+            <label for="escolaridade_id">ESCOLARIDADE:</label>
+            <input id="escolaridade_id" name="escolaridade" type="text" list="escolaridades">
+            <datalist id="escolaridades">
+                <option value="9º Ano"></option>
+                <option value="12º Ano">
+                </option>
+                <option value="Licenciatura"></option>
+            </datalist>
+            <br><br>
+
+            <label for="instituiçaodeensino_id">Instituição de ensino:</label>
+            <input type="text" name="instituiçaodeensino" size="100" >
+            <br><br>
+            <label for="data_id">Data em que terminou:</label>
+            <input id="data_id" name="data" type="date"><br><br>
+
+        </fieldset>
+    </form>
+    <br><br>
+    <form>
+        <fieldset>
+            <legend>FORMAÇAO PROFISSIONAL:</legend>
+            <label for="curso_id">Curso Profissional:</label>
+            <input id="cef_id" type="radio" value="CEF" name="curso_info">CEF
+            <input id="voc_id" type="radio" value="VOC" name="curso_info">VOC
+            <input id="efa_id" type="radio" value="EFA" name="curso_info">EFA
+            <input id="profissional" type="radio" value="Profissional" name="curso_info">Profissional
+            <br><br>
+            <label for="instituiçaodeensino_id">Instituição de ensino:</label>
+            <input type="text" name="instituiçaodeensino" size="100" >
+            <br><br>
+            <label for="informatica_id">Tem Formaçao na area da Informaçao?</label>
+            <input id="sim_id" type="radio" value="sim" name="informatica_info">Sim
+            <input id="nao_id" type="radio" value="nao" name="informatica_info">Nao
+
+            <br><br>
+
+            <label for="ling_id">Que linguagens de programação conhece?</label>
+            <input id="c_id" type="radio" value="C" name="ling_info">C
+            <input id="c++_id" type="radio" value="C++" name="ling_info">C++
+            <input id="Java_id" type="radio" value="Java" name="ling_info">Java
+            <input id="C#_id" type="radio" value="C#" name="ling_info">C#
+            <input id="javascript_id" type="radio" value="JavaScript" name="ling_info">JavaScript
+            <input id="php_id" type="radio" value="PHP" name="ling_info">PHP
+            <br><br>
+
+            <label for="inf_id">INFORMAÇAO ADICIONAL:</label><br>
+            <textarea name="notas" cols="40" rows="6" maxlength="200"></textarea>
+
+        </fieldset>
+    </form>
+</body>
+</html>
