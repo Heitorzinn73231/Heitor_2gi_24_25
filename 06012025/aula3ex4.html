@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <title> AULA 3 - Exemplo 4</title>
+        <style>
+            fieldset{
+                border: 2px solid #009;
+                border-radius: 25px;
+                box-shadow: 4px 4px 5px rgba(50,50, 50, 0.75);
+                background: #ff0;
+                width: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get" action="aula3_ex4.php">
+            <label for="n_id">Numero: </label>
+            <input type="number" name="n"placeholder="Digite um numero"><br><br>
+            <fieldset>
+                <legend><b>Operaçoes</b></legend>~
+                <input type="radio" name="operacao" id="quadrado" value="1" checked/>
+                <label for="quadrado">QUADRADO</label>
+                <input type="radio" name="operacao" id="cubo" value="2"/>
+                <label for="cubo">CUBO</label>
+                <input type="radio" name="operacao" id="raiz" value="3"/>
+                <label for="raiz">RAIZ QUADRADA</label>
+            </fieldset><br>
+            <input type="submit" value="CALCULAR">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <title> AULA - Exemplo 3</title>
+        <style>
+            fieldset{
+                border: thick solid #f00;
+                border-radius: 25px;
+                width: 450px;
+            }
+            legend{
+                color: #fff;
+                background: #000;
+                font-size: 1.5em;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get" action="aula3_exemplo3.php">
+            <fieldset>
+                <legend>Calculo da Média dos Testes:</legend>
+                <label for="t1_id"><b>TESTE 1:</b></label>
+                <input type="number" name="t1" min="0" max="20"><br><br>
+                <label for="t2_id"><b>TESTE 2:</b></label>
+                <input type="number" name="t2" min="0" max="20">
+                <input type="submit" value="CALCULAR">
+            </fieldset>
+    </body>
+</html>
