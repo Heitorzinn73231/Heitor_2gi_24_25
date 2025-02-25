@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            fieldset{
+                border: thick solid #947CB0;
+                background-color: lightgray;
+                box-shadow: 10px 10px 5px #888888;
+                width: 600px;
+                margin: 100px 120px;
+            }
+            legend{
+                color: #FDE3A7;
+                background: #95A5A6;
+                font-family: Verdana;
+                font-weight: bolder;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+
+            .button{
+                background-color: #6C7A89;
+                border: none;
+                color: white;
+                font-family: Arial;
+                font-weight: bold;
+                padding: 10px 10px;
+                text-align: center;
+                display: inline-block;
+                margin: 4px 2px;
+                width: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="recebeform.php">
+            <fieldset>
+                <legend> Inscrição Online - Cursos Profissionais</legend>
+                <label for="contactNome"> Nome Completo:</label>
+                <input name="n" id="contactNome" type="text" size="60">
+                <br><br>
+                <label for="tlmnumero"> Telemóvel:</label>
+                <input name="tlm" id="tlmnumero" type="text" size="60">
+                <br><br>
+                <label for="email"> Email: </label>
+                <input name="email" id="email" type="text" size="60">
+                <br><br>
+                <label for="curso_id"> Curso: </label><br><br>
+                <input id="teatro_id" type="radio" value="teatro" name="curso">Teatro
+                <input id="turismo_id" type="radio" value="turismo" name="curso">Turismo
+                <input id="informatica_id" type="radio" value="informatica" name="curso">Programação de Sistemas Informáticos
+                <br><br>
+                <input class="button" type="submit" value="Enviar">
+                <input class="button" type="reset" value="Limpar">
+            </fieldset>
+        </form>
+    </body>
+</html>
